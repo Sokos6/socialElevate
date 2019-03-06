@@ -87,9 +87,9 @@ class Profile extends Component {
           </ListItem>
           <Divider/>
           <ListItem>
-            <ListItemText primary={"Joined: " + (
-              new Date(this.state.user.created)).toDateString()}/>
-          </ListItem>
+          <ListItemText primary={this.state.user.about} secondary={"Joined: " + (
+            new Date(this.state.user.created)).toDateString()}/>
+        </ListItem>
         </List>
       </Paper>
     )
